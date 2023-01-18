@@ -16,6 +16,7 @@ import Newsletter from './components/Newsletter';
 import { React, useReducer } from 'react';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataJson from './components/DataJson';
+import ComponentC from './components/ComponentC';
 
 
 function App() {
@@ -65,7 +66,8 @@ function App() {
       {/* <Form /> */}
       {/* <Newsletter /> */}
       {/* <DataFetchingOne /> */}
-      <DataJson />
+      {/* <DataJson /> */}
+      <ComponentC />
 
     </div> 
   );
