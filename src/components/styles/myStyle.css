@@ -1,0 +1,28 @@
+.primary{
+    color: orange;
+}
+
+.border{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.pink{
+    color: pink;
+    background-color: darkslategray;
+}
+
+.indigo{
+    color: indigo;
+    background-color: silver;
+}
+
+.green{
+    background-color: green;
+}
+
+.error{
+    border: 2px solid red;
+}
+.valid{
+    border: 2px solid green;
+}
