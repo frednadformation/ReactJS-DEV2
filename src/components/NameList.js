@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar/Navbar';
 import Person from './Person';
 
 function NameList() {
@@ -30,6 +31,7 @@ function NameList() {
 
   return (
     <div>
+    <Navbar />
         {/* <h2>{names[0]}</h2>
         <h2>{names[1]}</h2>
         <h2>{names[2]}</h2> */}
