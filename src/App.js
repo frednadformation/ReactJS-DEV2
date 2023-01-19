@@ -19,6 +19,8 @@ import DataJson from './components/DataJson';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/UserContext';
 import DataFetchAll from './components/DataFetchAll';
+import DataFetchAllTodos from './components/DataFetchAllTodos';
+import DataReducer from './components/DataReducer';
 
 
 function App() {
@@ -72,7 +74,9 @@ function App() {
       {/* <UserProvider value="Toto">
         <ComponentC />
       </UserProvider> */}
-      <DataFetchAll />
+      {/* <DataFetchAll /> */}
+      {/* <DataFetchAllTodos /> */}
+      <DataReducer />
     </div> 
   );
 } 

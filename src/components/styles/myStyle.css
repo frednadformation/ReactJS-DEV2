@@ -26,3 +26,10 @@
 .valid{
     border: 2px solid green;
 }
+
+.bgGreen{
+    background-color: green;
+}
+.bgRed{
+    background-color: red;
+}
