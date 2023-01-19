@@ -1,10 +1,15 @@
 import React from 'react'
+import { UserConsumer } from './UserContext'
 
 function ComponentUser() {
   return (
-    <div>
-        <h1>Component User</h1>
-    </div>
+    <UserConsumer>
+        {
+          username => {
+            return <div>Hello {username}</div>
+          }
+        }
+    </UserConsumer>
   )
 }
 

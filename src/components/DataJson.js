@@ -30,7 +30,7 @@ function DataJson() {
     }
 
   return (
-    <div>
+    <React.Fragment>
         <input type="text" onChange={handleNameChange}/>
         <br/>
         {
@@ -52,7 +52,7 @@ function DataJson() {
         {
             error ? "Error" : null
         }
-    </div>
+    </React.Fragment>
   )
 }
 
