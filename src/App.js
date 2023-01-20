@@ -6,6 +6,9 @@ import Home from './components/Home';
 import NameList from './components/NameList';
 import Profile from './components/Profile/Profile';
 import NotFound from './components/NotFound';
+import Services from './components/Services/Services';
+import Developpement from './components/Services/Developpement/Developpement';
+import Marketing from './components/Services/Marketing/Marketing';
 
 
 function App() {
@@ -16,6 +19,11 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/namelist' element={<NameList/>}/>
         <Route path='/profile/:id' element={<Profile/>}/>
+
+        <Route path='/services' element={<Services/>}>
+          <Route path='/services/developpement' element={<Developpement/>}/>
+          <Route path='/services/marketing' element={<Marketing/>}/>
+        </Route>
        
         <Route path='/*' element={<NotFound />} />
       </Routes>
