@@ -12,11 +12,17 @@ import Marketing from './components/Services/Marketing/Marketing';
 import Admin from './components/Admin/Admin';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import GestionPost from './components/Admin/GestionPost/GestionPost';
+import FetchApi from './components/FetchApi/FetchApi';
+import Blog from './components/Blog/Blog';
+
+import { AppContainer } from './components/Container.style';
 
 
 function App() {
   return (
     <div className="App">
+    <AppContainer>
+
       <Routes>
 
         <Route path='/' element={<Home/>} />
@@ -33,9 +39,15 @@ function App() {
           <Route path='/admin/gestionPost' element={<GestionPost/>}/>
         </Route>
 
+        <Route path='/fetchapi' element={<FetchApi />}/>
+
+        <Route path='/allposts' element={<Blog/>}/>
        
         <Route path='/*' element={<NotFound />} />
       </Routes>
+
+    </AppContainer>
+
     </div>
   );
 }
