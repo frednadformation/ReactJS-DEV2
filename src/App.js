@@ -9,6 +9,9 @@ import NotFound from './components/NotFound';
 import Services from './components/Services/Services';
 import Developpement from './components/Services/Developpement/Developpement';
 import Marketing from './components/Services/Marketing/Marketing';
+import Admin from './components/Admin/Admin';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import GestionPost from './components/Admin/GestionPost/GestionPost';
 
 
 function App() {
@@ -24,6 +27,12 @@ function App() {
           <Route path='/services/developpement' element={<Developpement/>}/>
           <Route path='/services/marketing' element={<Marketing/>}/>
         </Route>
+
+        <Route path='/admin' element={<Admin />}>
+          <Route path='/admin/dashboard' element={<Dashboard/>}/>
+          <Route path='/admin/gestionPost' element={<GestionPost/>}/>
+        </Route>
+
        
         <Route path='/*' element={<NotFound />} />
       </Routes>

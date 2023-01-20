@@ -6,7 +6,6 @@ function Home() {
     <React.Fragment>
         <Navbar/>
         <h1>Bienvenue sur notre super site React !</h1>
-
     </React.Fragment>
   )
 }
