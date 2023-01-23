@@ -16,6 +16,8 @@ import FetchApi from './components/FetchApi/FetchApi';
 import Blog from './components/Blog/Blog';
 
 import { AppContainer } from './components/Container.style';
+import Connexion from './components/Connexion/Connexion';
+import Inscription from './components/Inscription/Inscription';
 
 
 function App() {
@@ -42,8 +44,13 @@ function App() {
         <Route path='/fetchapi' element={<FetchApi />}/>
 
         <Route path='/allposts' element={<Blog/>}/>
-       
+
+        <Route path='/login' element={<Connexion/>} />
+        <Route path='/register' element={<Inscription/>} />
+      
+      
         <Route path='/*' element={<NotFound />} />
+      
       </Routes>
 
     </AppContainer>
